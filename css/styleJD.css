@@ -163,93 +163,41 @@
     content: none;
   }
 }
-
-/* STYLES iPad in portrait & landscape */
-@media only screen and (min-width : 768px) and (max-width : 1024px)  {
-  .responsive-table tbody td[data-title]:before {
-    content: none;
-  }
-  h1 {
-    font-size: 1.6em;
-  }
-  .container {
-    margin: 2em auto;
-    max-width: 75em;
-  }
-  .responsive-table {
-    font-size: 1em;
-  }
-  .responsive-table tbody td {
-    border-bottom: 1px solid #222222;
-  }
-  .mainBodyGrad{
-    min-height: 745px;
-  }
+.nav>li{
+    border-left: 7px solid #222222;
 }
-
-/* STYLES iPhone in portrait & landscape */
-@media only screen and (min-width : 320px) and (max-width : 767px) {
-  .responsive-table tbody td[data-title]:before {
-    font-size: .9em;
-  }
-  .headerBox {
-      padding: 20px 0 20px 0px;
-      width: 100%;
-  }
-  .logo {
-      display: inline-block;
-      width: 100%;
-  }
-  .dataRetriveBtn {
-    display: inline-block;
-    text-align: center;
-    margin: 43px 0;
-    width: 100%;
-  }
-  .btn{
-    width: 90%;
-  }
-  h1 {
-    text-align: center;
-  }
-.container {
-    margin: 2%;
-    margin-bottom: 98px;
-  }
-  .responsive-table {
-    font-size: .9em;
-  }
-  .responsive-table thead {
+.side-nav.collapsed {
+    width: 60px;
+}
+.side-nav.collapsed .fa{
+    font-size: 22px;
+}
+.side-nav.collapsed .nav-label{
+    display: none;
+}
+@media (min-width: 48em) {
+    .pad-left-60{
+        padding-left:60px !important;
+    }
+}
+.pos-left-60{
+    left: 60px !important;
+}
+.btn-expand-collapse{
     position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-  }
-  .responsive-table tbody td {
-    border: 1px solid transparent;
-  }
-  .responsive-table tbody tr td:nth-of-type(even) {
-    background-color: #323C50;
-  }
-  .responsive-table tbody tr td:nth-of-type(odd) {
-    background-color: #2C3446;
-  }
-  .responsive-table tbody tr td.Success {
-    background-color:#008000;
-  }
-  .responsive-table tbody tr td.inProgress {
-    background-color:#ff0000;
-  }
+    top: 400px;
+    left: 225px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #444444;
+    border-right: 0 solid #444444;
+    border-bottom: 14px solid transparent;
+    content: " ";
 }
 
-
-
-
+/* Flash Button Styles */
 a.btn-primary {
   /*  styling */
   display: inline-block;
@@ -257,7 +205,7 @@ a.btn-primary {
   text-decoration: none;
   letter-spacing: 5px;
   color: #FFFFFF;
-  border: 0px solid #FAFAFA;
+  border: 2px solid #FAFAFA;
   padding: 10px 4px;
   /*  centering */
   position: absolute;
@@ -424,5 +372,91 @@ i.glow {
   }
   100% {
     left: 82%;
+  }
+}
+
+/* STYLES iPad in portrait & landscape */
+@media only screen and (min-width : 768px) and (max-width : 1024px)  {
+  .responsive-table tbody td[data-title]:before {
+    content: none;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  .container {
+    margin: 2em auto;
+    max-width: 75em;
+  }
+  .responsive-table {
+    font-size: 1em;
+  }
+  .responsive-table tbody td {
+    border-bottom: 1px solid #222222;
+  }
+  .mainBodyGrad{
+    min-height: 745px;
+  }
+}
+
+/* STYLES iPhone in portrait & landscape */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  .responsive-table tbody td[data-title]:before {
+    font-size: .9em;
+  }
+  .headerBox {
+      padding: 20px 0 20px 0px;
+      width: 100%;
+  }
+  .logo {
+      display: inline-block;
+      width: 100%;
+  }
+  .dataRetriveBtn {
+    display: inline-block;
+    text-align: center;
+    margin: 43px 0;
+    width: 100%;
+  }
+  .btn{
+    width: 90%;
+  }
+  h1 {
+    text-align: center;
+  }
+.container {
+    margin: 2%;
+    margin-bottom: 98px;
+  }
+  .responsive-table {
+    font-size: .9em;
+  }
+  .responsive-table thead {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  .responsive-table tbody td {
+    border: 1px solid transparent;
+  }
+  .responsive-table tbody tr td:nth-of-type(even) {
+    background-color: #323C50;
+  }
+  .responsive-table tbody tr td:nth-of-type(odd) {
+    background-color: #2C3446;
+  }
+  .responsive-table tbody tr td.Success {
+    background-color:#008000;
+  }
+  .responsive-table tbody tr td.inProgress {
+    background-color:#ff0000;
+  }
+  .pad-left-60 {
+    padding-left: 0px !important;
   }
 }
