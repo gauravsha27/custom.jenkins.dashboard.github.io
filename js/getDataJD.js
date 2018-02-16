@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+  $('.btn-expand-collapse').click(function(e) {
+  //console.log("btn click");
+    $('.side-nav').toggleClass('collapsed');
+    $('#wrapper').toggleClass('pad-left-60');
+    $('.btn-expand-collapse').toggleClass('pos-left-60');
+  });
+
+
     //Dropdown selected Item
     $('#ddlEnv').change(function () {
         var doc = document.getElementById("ddlEnv");
