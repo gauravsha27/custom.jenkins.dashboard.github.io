@@ -1,4 +1,4 @@
-﻿/* Dark Admin Bootstrap Theme by PrepBootstrap - http://www.prepbootstrap.com */
+/* Including CSS Reset By Gaurav*/
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5985,7 +5985,7 @@ table.tablesorter thead tr th:hover {
 	top: 50px;
 	height: 100%;
 	border-radius: 0;
-	border: none;
+	border-right: 1px solid #444444;
 	background-color: #222222;
 	overflow-y: auto;
   }
@@ -6117,7 +6117,7 @@ table.tablesorter thead tr th:hover {
 }
 
 .selected {
-    border-left:7px solid #2A9FD6;
+    border-left:7px solid #2A9FD6 !important;
 }
 
  .timeline {
