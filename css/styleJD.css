@@ -183,18 +183,23 @@
 .pos-left-60{
     left: 60px !important;
 }
-.btn-expand-collapse{
+.btn-expand-collapse {
     position: absolute;
     top: 400px;
     left: 225px;
     display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #444444;
-    border-right: 0 solid #444444;
-    border-bottom: 14px solid transparent;
+    width: 16px;
+    height: 32px;
+    border-top: 1px solid #444444;
+    border-left: 0;
+    border-right: 1px solid #444444;
+    border-bottom: 1px solid #444444;
     content: " ";
+    background-color: #222222;
+    color: #FFF;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -1px;
+    cursor: pointer;
 }
 
 /* Flash Button Styles */
