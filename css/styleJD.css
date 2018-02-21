@@ -201,6 +201,10 @@
     margin-left: -1px;
     cursor: pointer;
 }
+.btn-expand-collapse:hover{
+  background-color: #666;
+}
+
 
 /* Flash Button Styles */
 a.btn-primary {
